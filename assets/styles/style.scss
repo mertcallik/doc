@@ -1,0 +1,20 @@
+// Temel
+@import "base/reset";
+@import "base/variables";
+@import "base/input";
+@import "base/button";
+// Bileşenler
+@import "components/navbar";
+@import "components/footer";
+@import "components/feed";
+@import "components/trend";
+// Sayfalar
+@import "pages/login";
+@import "pages/register";
+@import "pages/discover";
+@import "pages/postDetail";
+@import "pages/profile";
+@import "pages/admin";
+@import "pages/feedback";
+
+@import "body";

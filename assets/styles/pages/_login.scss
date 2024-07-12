@@ -1,0 +1,54 @@
+.login-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-primary;
+  color: white;
+  font-family: $font-primary;
+
+  .login-form {
+    width: 40%;
+    padding: 40px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    h1 {
+      color: $color-primary;
+      font-family: $font-primary;
+      font-weight: 700;
+      padding: 5px 0;
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+    p {
+      color: $text-color;
+      font-family: $font-primary;
+      font-weight: 500;
+      padding: 10px 0;
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      a {
+        color: $color-primary;
+        text-align: start;
+        margin-top: 10px;
+        font-size: 0.9rem;
+        text-decoration: none;
+        &:hover {
+          color: darken($color-primary, 10%);
+        }
+      }
+      .mb-5 {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}

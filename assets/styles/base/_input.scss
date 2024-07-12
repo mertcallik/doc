@@ -1,0 +1,16 @@
+.primary-input {
+  padding: 10px 20px;
+  border: 1px solid $color-primary;
+  border-radius: 5px;
+  font-family: $font-primary;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  outline: none;
+  &:focus {
+    border-color: darken($color-primary, 10%);
+  }
+  &:active {
+    border-color: darken($color-primary, 20%);
+    outline: none;
+  }
+}

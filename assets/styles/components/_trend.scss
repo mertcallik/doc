@@ -1,0 +1,44 @@
+.trend-content {
+  width: 80%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+  .trend-heading {
+    color: $color-primary;
+    font-family: $font-primary;
+    font-weight: 600;
+    font-size: 1.5rem;
+    display: flex;
+  }
+  ul {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    list-style: none;
+    width: 100%;
+    li {
+      margin: 0 10px;
+      background-color: $color-primary;
+      width: 100%;
+      padding: 50px;
+      transition: all 0.3s ease-in-out;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      a {
+        color: white;
+        font-family: $font-primary;
+        font-weight: 500;
+        font-size: 1.5rem;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+      }
+      &:hover {
+        background-color: darken($color-primary, 5%);
+      }
+    }
+  }
+}
